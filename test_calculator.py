@@ -46,4 +46,5 @@ def test_divide_by_zero():
 
 @pytest.mark.slow
 def test_performance():
-    result = sum(range(1000000))
+    sum(range(1000000))
+    
