@@ -9,13 +9,13 @@ on:
 jobs:
   # Call the reusable workflow with default settings
   test-default:
-    uses: ./.github/workflows/reusable-test.yml
+    uses: ./.github/workflows/reusable-test.yaml
     secrets:
       API_KEY: ${{ secrets.API_KEY }}
   
   # Call the reusable workflow with custom settings
   test-custom:
-    uses: ./.github/workflows/reusable-test.yml
+    uses: ./.github/workflows/reusable-test.yaml
     with:
       python-version: '3.12'
       test-command: 'pytest -v --cov'
