@@ -11,9 +11,9 @@ def test_add():
 
 def test_subtract():
     """Test subtraction function."""
-    assert subtract(5, 3) == 0
-    assert subtract(0, 5) == 5
-    assert subtract(-3, -2) == 1
+    assert subtract(5, 3) == 2
+    assert subtract(0, 5) == -5
+    assert subtract(-3, -2) == -1
 
 def test_multiply():
     """Test multiplication function."""
