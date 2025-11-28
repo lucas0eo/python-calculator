@@ -39,6 +39,14 @@ jobs:
       
       - name: Run linter
         run: flake8 calculator.py test_calculator.py --max-line-length=100
+
+      - name: Install autopep8
+        run: pip install autopep8
+      
+      - name: Run linter
+        run: autopep8 --in-place --aggressive --aggressive calculator.py
+        run: autopep8 --in-place --aggressive --aggressive test_calculator.py
+      
   test:
     needs: lint
     name: Run Tests
